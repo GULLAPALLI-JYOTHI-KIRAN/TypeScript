@@ -1,0 +1,47 @@
+Here, we will modify the tsconfig.json file::
+
+You can learn more at https://aka.ms/tsconfig
+
+In tsConfig.json file we include 2 properties
+
+1.CompileOptions
+2.Include
+
+In Include property ,we will pass array of string as ["src"] : this means we must to create src folder to write ts code in it.
+
+Then in CompileOptions, we need to include mainly :
+
+compileOptions:{
+"target":"es2022", // This is for the typescript version
+"module":"es2022", // This is for converting the TypeScript version to the JS version
+" rootDir":"src", // Where we will find list of our code file in this folder
+"outDir":"dist", // Whatever the TS files will be converted to JS files
+"strict":true // Same as "use strict"
+}
+
+{
+"compilerOptions": {
+"target": "es2022",
+"module": "es2022",
+"moduleResolution": "bundler",
+"strict": true,
+"noUncheckedIndexedAccess": true,
+"useUnknownInCatchVariables": true,
+"exactOptionalPropertyTypes": true,
+"skipLibCheck": true,
+"rootDir": "src",
+"outDir": "dist"
+},
+"include": ["src"]
+}
+
+We need to change in package.json also.
+Add this in package.json
+"scripts":{
+"build":"tsc -p tsconfig.json",
+"dev":"tsc -p -w tsconfig.json"
+},
+
+To run we just navigate to the folder tsconfig and write npm run dev We will see Dist folder containing JavaScript code compiled from Typescript.
+
+**\*** Very file we will have readme file.please go through it.

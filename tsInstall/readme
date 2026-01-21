@@ -1,0 +1,9 @@
+To start Typescript we need to install ::
+
+1.npm init -y ->to create package.json
+2.npm i -D typescirpt ->to install ts node module as devDependence in your folder
+3.npx tsc --init -> This will install the tsconfig.Json and file that you will see very framework using TS. In Tsconfig.Jsn 5 you will see lot of commands but we need our project requirement comments so we can modify anytime.
+
+We will create another folder so we'll explain in that order so go to read me in that folder
+
+**\*** Very file we will have readme file.please go through it.
