@@ -5,7 +5,7 @@
 let str:string="Emma Waston";
 
 // something You wan to change  value to other type
-str=undefined; // You're getting the error highlighting to str because we enable strict=true for now if strict=false then You will not see the error highlighting. Please enable strict=true everytime.
+// str=undefined; // You're getting the error highlighting to str because we enable strict=true for now if strict=false then You will not see the error highlighting. Please enable strict=true everytime.
 
 // If you're not sure about the data type it will change in future but the guees  then do like blow
 
@@ -26,7 +26,7 @@ function fail(msg:string):never{
     throw new Error(msg);
 }
 
-// type any Never used any type so leave as it matches.
+// type any :: Never used any type so leave as it matches.
 
 // for example
 

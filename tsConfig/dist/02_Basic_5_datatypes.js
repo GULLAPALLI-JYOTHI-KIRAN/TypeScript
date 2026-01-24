@@ -1,3 +1,4 @@
+"use strict";
 /* JavaScript and TypeScript Primitives
 The most basic types in TypeScript are called primitives.
 

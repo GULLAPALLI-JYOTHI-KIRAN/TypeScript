@@ -1,3 +1,4 @@
+"use strict";
 /* Literal const in Ts */
 function move(d) {
     console.log(d);

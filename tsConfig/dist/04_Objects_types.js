@@ -1,3 +1,4 @@
+"use strict";
 // Working with Object types
 let user1 = {
     id: "12edf",

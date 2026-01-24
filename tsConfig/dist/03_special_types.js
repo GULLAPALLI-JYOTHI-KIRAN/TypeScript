@@ -1,8 +1,9 @@
+"use strict";
 /* Special Types in Ts */
 // Problem
 let str = "Emma Waston";
 // something You wan to change  value to other type
-str = undefined; // You're getting the error highlighting to str because we enable strict=true for now if strict=false then You will not see the error highlighting. Please enable strict=true everytime.
+// str=undefined; // You're getting the error highlighting to str because we enable strict=true for now if strict=false then You will not see the error highlighting. Please enable strict=true everytime.
 // If you're not sure about the data type it will change in future but the guees  then do like blow
 // unions
 let st = 20; // In this case we will not get any error if we assign string or undefined or the number
@@ -14,7 +15,7 @@ function log(msg) {
 function fail(msg) {
     throw new Error(msg);
 }
-// type any Never used any type so leave as it matches.
+// type any :: Never used any type so leave as it matches.
 // for example
 let res = 102;
 // res.notThere.toFixed();// This works during compilation but not at the runtime
