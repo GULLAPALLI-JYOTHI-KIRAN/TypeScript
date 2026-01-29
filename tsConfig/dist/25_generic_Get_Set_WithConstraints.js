@@ -1,0 +1,19 @@
+"use strict";
+/* Get and Set Value with Generic Constraints */
+//Get Value from Generic Constraints
+function GetProps(obj, k) {
+    return obj[k];
+}
+/* This function return T of K that means what ever T is but K in T and K is any type of T*/
+let getPro = { id: 193, name: "John" };
+console.log(GetProps(getPro, "name"));
+console.log(GetProps(getPro, "id"));
+console.log(GetProps(getPro, "email"));
+/* K is string so function return string only. */
+// Set Value from a Generic Constraint
+function SetProps(obj, key, value) {
+    // here we set value type will be T of K that means what ever you pass into  T, and T must have K and T[k] of it's type 
+    obj[key] = value;
+    return obj;
+}
+console.log(SetProps(getPro, "name", "Ben")); //Here we are changing the existing property value
